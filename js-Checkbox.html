@@ -1,0 +1,32 @@
+<!--
+    jquery 약관 동의 체크박스 예제
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    약관
+    <ul>
+        <li>제이쿼리 약관 동의 예제</li>
+        <li>체크박스 체크안하면 팝업</li>
+        <li>체크박스 체크하면 동의완료</li>
+    </ul>
+    <input id="noti" type="checkbox" value="1"><br>
+    <input type="button" class="submit" value="확인">
+    <script>
+    $(".submit").click(function() {
+        var chk = $("input[id=noti]").is(":checked");
+        if(!chk) {
+        alert("약관 동의가 필요 함");
+        }
+        else {
+        alert("OK");
+        }
+    })
+    </script>
+</body>
+
+</html>
