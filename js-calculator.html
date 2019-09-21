@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator example</title>
+    </head>
+    <body>
+        <script>
+            const calculator = {
+                plus: function(n1, n2){
+                    return n1 + n2;
+                },
+                minus: function(n1 ,n2){
+                    return n1 - n2;
+                },
+                mul: function(n1, n2){
+                    return n1 * n2;
+                },
+                div: function(n1, n2){
+                    return n1 / n2;
+                }
+            }
+            console.log(
+                calculator.plus(10, 5),
+                calculator.minus(10, 5),
+                calculator.mul(10, 5),
+                calculator.div(10, 5)
+            );
+        </script>
+    </body>
+</html>

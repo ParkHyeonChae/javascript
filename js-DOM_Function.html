@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modifying the DOM with JS</title>
+    </head>
+    <body>
+        <h1 id="title">TEST</h1>
+        <script>
+            // const title = document.getElementById("title");
+            const title = document.querySelector("#title"); //노드의 첫번째 자식을 반환
+            title.innerHTML = "Hi! From JS";
+            title.style.color = "red";
+            document.title = "test";
+        </script>
+    </body>
+</html>
