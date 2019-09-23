@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events and event handlers</title>
+    </head>
+    <body>
+        <h1 id="title">TEST</h1>
+        <script>
+            const title = document.querySelector("#title");
+            
+            // function handleResize(){
+            //     console.log("I have been resized")
+            // }
+            // window.addEventListener("resize", handleResize); //window는 resize 이벤트를 기다리고있다.
+            
+            function handleClick(){
+                title.style.color = "red";
+            }
+            title.addEventListener("click", handleClick); //title은 click 이벤트를 기다리고 있다.
+        </script>
+    </body>
+</html>
