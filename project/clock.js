@@ -11,6 +11,7 @@ function getTime(){
 
 function init(){
     getTime();
+    setInterval(getTime, 1000); // setInterval함수 첫인자는 함수명, 두번째인자는 시간간격
 }
 
 init();
