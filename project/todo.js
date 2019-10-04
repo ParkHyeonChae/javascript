@@ -5,7 +5,7 @@ const toDoform = document.querySelector(".js-toDoForm"),
 const TODOS_LS = "toDos";
 
 function filterFn(toDo){
-    return toDo.id === 1
+    return toDo.id === 1 // li에 없는 id를 체크하기 위해
 }
 
 let toDos = []; // 할일 저장
