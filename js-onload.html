@@ -1,0 +1,72 @@
+<!--프리캡스톤디자인 Strut.io 객체강제삽입-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>window.onload</title>
+</head>
+
+<body>
+    <script>
+        // inputText.js
+        window.onload = function () {
+
+                setTimeout(function () {
+                    for (var i = 0; i < 2; i++) {
+                        document.getElementsByClassName("btn btn-plast")[1].click();
+                    }
+                    setTimeout(function () {
+                        document.getElementsByClassName("content")[0].getElementsByTagName("font")[0]
+                            .innerText = "프리캡스톤디자인 최종발표";
+                        document.getElementsByClassName("content")[1].getElementsByTagName("font")[0]
+                            .innerText = "EPT 팀";
+
+                        setTimeout(function () {
+                            document.getElementsByClassName("addBtn btn btn-success")[0]
+                                .click();
+                            setTimeout(function () {
+                                for (var i = 0; i < 2; i++) {
+                                    document.getElementsByClassName("btn btn-plast")[1]
+                                        .click();
+                                }
+                                setTimeout(function () {
+                                    document.getElementsByClassName("content")[
+                                            0].getElementsByTagName("font")[0]
+                                        .innerText = "EPT란?";
+                                    document.getElementsByClassName("content")[
+                                            1].getElementsByTagName("font")[0]
+                                        .innerText =
+                                        "빠르고 손쉽게 발표자료를 제작 할 수 있는 도구";
+                                }, 100)
+                            }, 500)
+                            setTimeout(function () {
+                                document.getElementsByClassName(
+                                    "addBtn btn btn-success")[0].click();
+                                setTimeout(function () {
+                                    for (var i = 0; i < 2; i++) {
+                                        document.getElementsByClassName(
+                                            "btn btn-plast")[1].click();
+                                    }
+                                    setTimeout(function () {
+                                        document.getElementsByClassName(
+                                                "content")[0]
+                                            .getElementsByTagName(
+                                                "font")[0].innerText =
+                                            "대본분석기";
+                                        document.getElementsByClassName(
+                                                "content")[1]
+                                            .getElementsByTagName(
+                                                "font")[0].innerText =
+                                            "발표자료에 들어갈 문장 입력";
+                                    }, 100)
+                                }, 500)
+                            }, 500);
+                        }, 500);
+                    }, 100)
+                }, 6000);
+            }
+    </script>
+</body>
+
+</html>
